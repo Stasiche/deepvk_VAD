@@ -1,0 +1,1 @@
+find ../ava_speech_dataset -name "*.wav" -type f -execdir sox --norm=-3 {} -r 16k -c 1 `pwd`/ava_speech_dataset_one_channel/{} \;
